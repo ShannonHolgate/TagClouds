@@ -1,0 +1,25 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<html lang="en">
+<head>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.4.2.js"></script>
+<link type="text/css" rel="stylesheet" charset="UTF-8" href="https://rawgit.com/Tuxes3/tx3TagCloud/master/tx3-tag-cloud.css">
+<script type="text/javascript" src="https://rawgit.com/Tuxes3/tx3TagCloud/master/jquery.tx3-tag-cloud.js"></script>
+</head>
+<body>
+  <ul id="tagcloud" style="width:30%;">
+    <li data-weight="50"><a href="http://www.ninis2.nisra.gov.uk/public/Theme.aspx?themeNumber=136&themeName=Census%202011">Census 2011</a></li>
+    <li data-weight="26"><a href="http://www.ninis2.nisra.gov.uk/public/Theme.aspx?themeNumber=10&themeName=People%20and%20Places">People and Places</a></li>
+    <li data-weight="32"><a href="http://www.ninis2.nisra.gov.uk/public/Theme.aspx?themeNumber=74&themeName=Population">Population</a></li>
+    <li data-weight="40"><a href="http://www.ninis2.nisra.gov.uk/public/Theme.aspx?themeNumber=137&themeName=Deprivation">Deprivation</a></li>
+    <li data-weight="36"><a href="http://www.ninis2.nisra.gov.uk/public/Theme.aspx?themeNumber=-2&themeName=Investing+for+Health">Health Strategy</a></li>
+  </ul>
+  <script type="text/javascript">
+  // default multiplier is "1"
+  $(document).ready(function(){
+    $("#tagcloud").tx3TagCloud({
+      multiplier: 3
+    });
+  });
+  </script>
+</body>
+</html>
